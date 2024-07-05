@@ -20,7 +20,7 @@
       </div>
 
       <div class="w-full px-2">
-        <button class="block mx-auto px-3 mt-4 py-2 bg-blue-500 text-white rounded-md text-sm">{{ editMode ? 'Update Task' : 'Add Task' }}</button>
+        <button [disabled]="taskform.invalid" type="submit" class="block mx-auto px-3 mt-4 py-2 bg-blue-500 text-white rounded-md text-sm">{{ editMode ? 'Update Task' : 'Add Task' }}</button>
       </div>
     </div>
   </form>
